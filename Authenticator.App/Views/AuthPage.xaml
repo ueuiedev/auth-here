@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Authenticator.App.Views.AuthPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Image Source="ms-appx:///Assets/AuthPageIcon.png" Width="100" Height="100" />
+
+            <TextBlock Margin="10" HorizontalAlignment="Center" FontSize="15" FontWeight="Black" Text="Authenticator is locked" />
+            <TextBlock Margin="10" HorizontalAlignment="Center" FontSize="14" FontWeight="Normal" Text="Sign in with Windows Hello to access your passwords." />
+
+            <Button Margin="10" Width="125" Content="Sign In" Click="SignInButton_Click" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+        </StackPanel>
+    </Grid>
+</Page>
